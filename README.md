@@ -1,7 +1,7 @@
 # SFM Toggle Log Thresholds Script
 Stop SFM from deleting redundant keys automatically!
 
-This script toggles the "Log Threshold" system that SFM uses internally to decide similarity are when trying to delete "redundant" keyframes.
+This script toggles the "Log Threshold" system that SFM uses internally to decide similarity between keys when trying to delete "redundant" keyframes.
 
 It's useful if you're working on very complex animation in the motion editor, as otherwise SFM may "compress" the samples which may change your desired animation.
 
