@@ -42,6 +42,8 @@ def toggle_log_thresholds():
         threshold_qangle = 0
         threshold_quaternion = 0
         disabled = True
+    else:
+        disabled = False
 
     # Only these elements seem to be affected by the log threshold
     vs.movieobjects.CDmeVector3Log.SetValueThreshold(threshold_vector3)
