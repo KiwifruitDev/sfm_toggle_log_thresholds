@@ -5,6 +5,7 @@ This script toggles the "Log Threshold" system that SFM uses internally to decid
 
 It's useful if you're working on very complex animation in the motion editor, as otherwise SFM may "compress" the samples which may change your desired animation.
 
+## Autostart
 Optionally, install [Autoinit Manager](https://steamcommunity.com/sharedfiles/filedetails/?id=3400621327) to automatically disable them on startup.
 
 SFM will automatically run the redundant keyframe deletion when loading a session without first disabling the thresholds, so you should definitely install [b]Autoinit Manager[/b] to make sure you don't lose your work.

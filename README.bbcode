@@ -1,9 +1,10 @@
 Stop SFM from deleting redundant keys automatically!
 This script toggles the "Log Threshold" system that SFM uses internally to decide similarity between keys when trying to delete "redundant" keyframes.
 It's useful if you're working on very complex animation in the motion editor, as otherwise SFM may "compress" the samples which may change your desired animation.
+[h2]Autostart[/h2]
 Optionally, install [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3400621327]Autoinit Manager[/url] to automatically disable them on startup.
 SFM will automatically run the redundant keyframe deletion when loading a session without first disabling the thresholds, so you should definitely install [b]Autoinit Manager[/b] to make sure you don't lose your work.
-[b]Usage[/b]
+[h2]Usage[/h2]
 Perform the following steps to use this script:
 [list]
 [*](Optional) Install [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3400621327]Autoinit Manager[/url].
@@ -13,9 +14,17 @@ Perform the following steps to use this script:
 [*]Otherwise, open the "Scripts" menu in the toolbar of SFM and navigate through "kiwifruitdev" and click "toggle log thresholds".
 [*]This will toggle on or off and show a message box indicating the current state of the thresholds.
 [/list]
-[b]Development[/b]
+[h2]Development[/h2]
 If you are a developer, check out this script on [url=https://github.com/KiwifruitDev/sfm_toggle_log_thresholds]GitHub[/url].
-[b]License[/b]
+[h2]License[/h2]
 This script is licensed under the MIT License. See the [url=LICENSE]LICENSE[/url] file for more information.
-[b]Funding[/b]
+[h2]Funding[/h2]
 If you would like to support my work, you can check out [url=https://store.steampowered.com/app/2516360/Nonsensical_Video_Generator/]Nonsensical Video Generator[/url], buy me a coffee on [url=https://ko-fi.com/kiwifruitdev]Ko-fi[/url], become a sponsor through [url=https://github.com/sponsors/KiwifruitDev]GitHub Sponsors[/url], or simply share my scripts with others. Thank you for your support!
+
+Includes:
+sfm\autoinit\disable_log_thresholds.py
+sfm\mainmenu\kiwifruitdev\toggle_log_thresholds.py
+
+Includes:
+sfm\mainmenu\kiwifruitdev\toggle_log_thresholds.py
+sfm\autoinit\disable_log_thresholds.py
