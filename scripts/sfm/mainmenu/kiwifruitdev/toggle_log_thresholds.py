@@ -31,24 +31,20 @@ def toggle_log_thresholds():
     # Detecting if we already ran this script
     disabled = vs.movieobjects.CDmeVector3Log.GetValueThreshold() == 0
 
-    # These are the default thresholds
-    threshold_vector3 = 0.01
-    threshold_qangle = 0.001
-    threshold_quaternion = 0.001
+    # These is the default threshold value
+    threshold = 0.001
 
     # Set to 0 to disable
     if not disabled:
-        threshold_vector3 = 0
-        threshold_qangle = 0
-        threshold_quaternion = 0
+        threshold = 0
         disabled = True
     else:
         disabled = False
 
     # Only these elements seem to be affected by the log threshold
-    vs.movieobjects.CDmeVector3Log.SetValueThreshold(threshold_vector3)
-    vs.movieobjects.CDmeQAngleLog.SetValueThreshold(threshold_qangle)
-    vs.movieobjects.CDmeQuaternionLog.SetValueThreshold(threshold_quaternion)
+    vs.movieobjects.CDmeVector3Log.SetValueThreshold(threshold)
+    vs.movieobjects.CDmeQAngleLog.SetValueThreshold(threshold)
+    vs.movieobjects.CDmeQuaternionLog.SetValueThreshold(threshold)
 
     # Create a pop-up message box to inform the user what happened
     message = "Log thresholds are now " + ("disabled" if disabled else "enabled") + "."
