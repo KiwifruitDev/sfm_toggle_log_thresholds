@@ -32,7 +32,7 @@ def toggle_log_thresholds():
     disabled = vs.movieobjects.CDmeVector3Log.GetValueThreshold() == 0
 
     # These is the default threshold value
-    threshold = 0.001
+    threshold = 0.00999999977648258
 
     # Set to 0 to disable
     if not disabled:
