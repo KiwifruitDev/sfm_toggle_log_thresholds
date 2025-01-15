@@ -56,7 +56,7 @@ def toggle_log_thresholds():
     msgBox.exec_()
 
     # Print the same message to the console
-    sfm.Msg(message)
+    sfm.Msg(message + "\n")
 
 # Run the function and that'll be it!
 toggle_log_thresholds()

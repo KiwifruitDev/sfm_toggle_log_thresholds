@@ -32,4 +32,4 @@ vs.movieobjects.CDmeQAngleLog.SetValueThreshold(0)
 vs.movieobjects.CDmeQuaternionLog.SetValueThreshold(0)
 
 # That's it!
-sfm.Msg("Log thresholds are now disabled.")
+sfm.Msg("Log thresholds are now disabled.\n")
